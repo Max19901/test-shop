@@ -1,0 +1,23 @@
+// Font vars
+$default-font: "roboto-example", sans-serif;
+$gothamRegular: "gotham-pro", sans-serif;
+$gothamBold: "gotham-pro-bold", sans-serif;
+$font-size-12: 12px;
+$font-size-14: 14px;
+
+// Colors vars
+$accent: orange;
+$text: #000;
+$white: #fff;
+$grey: #9B9B9B;
+$gold: #d4c53f;
+$black: #000;
+$grey-border: #e2e2e2;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;

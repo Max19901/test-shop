@@ -1,0 +1,10 @@
+@mixin button($image, $width, $height) {
+  width: $width;
+  height: $height;
+  border: none;
+  background: none;
+  background-image: url($image);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

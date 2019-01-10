@@ -1,0 +1,87 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "slick";
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+* {
+  outline: none!important;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $gothamRegular;
+	overflow-x: hidden;
+	color: $text;
+	padding-top: 120px;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+	a {
+		color: $text;
+		text-decoration: none;
+		&:hover {
+			color: $text;
+			text-decoration: none;
+		}
+	}
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        list-style-type: none;
+      }
+    }
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+.section-title {
+	font-size: 22px;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 30px;
+
+}
+
+
+@import "header"; //import components style
+@import "slider"; //import components style
+@import "content"; //import components style
+
+@import "media"; // Always at the end

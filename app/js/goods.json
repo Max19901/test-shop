@@ -1,0 +1,38 @@
+{
+  "1232": {
+    "name": "Pastel summer dress",
+    "size": ["xs", "s", "m"],
+    "price": 1200,
+    "id": 535728,
+    "img": "./img/goods/photo.png",
+    "count": 1,
+    "cost": 1200
+  },
+  "1233": {
+    "name": "leather shoes",
+    "size": ["xs", "s", "m"],
+    "price": 1200,
+    "id": 535729,
+    "img": "./img/goods/photo2.png",
+    "count": 1,
+    "cost": 1200
+  },
+  "1234": {
+    "name": "grey trench",
+    "size": ["xs", "s", "m"],
+    "price": 1200,
+    "id": 535727,
+    "img": "./img/goods/photo3.png",
+    "count": 1,
+    "cost": 1200
+  },
+  "1235": {
+    "name": "Minimal accessorie",
+    "size": ["xs", "s", "m"],
+    "price": 1200,
+    "id": 535723,
+    "img": "./img/goods/photo4.png",
+    "count": 1,
+    "cost": 1200
+  }
+}

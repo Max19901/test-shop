@@ -1,0 +1,159 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+
+  .header {
+    align-items: center;
+    justify-content: center;
+    &-top {
+      display: none;
+    }
+    &-bottom {
+      justify-content: space-between;
+      width: 100%;
+      .menu, .language {
+        display: none;
+      }
+      &__nav {
+        margin-left: 0;
+        width: 25px;
+        height: 18px;
+        align-items: flex-start;
+      }
+    }
+    .mobile-menu {
+      display: block;
+      span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: #000;
+        position: relative;
+        top: 8px;
+        -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        -o-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        -webkit-transition-duration: .22s;
+        -o-transition-duration: .22s;
+        transition-duration: .22s;
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 25px;
+          height: 2px;
+          background: #000;
+          top: 7px;
+          left: 0;
+          -webkit-transition: top 0.1s ease-in 0.25s, -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          transition: top 0.1s ease-in 0.25s, -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          -o-transition: top 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          transition: top 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          transition: top 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 25px;
+          height: 2px;
+          background: #000;
+          top: -7px;
+          left: 0;
+          -webkit-transition: top .1s ease-in .25s,opacity .1s ease-in;
+          -o-transition: top .1s ease-in .25s,opacity .1s ease-in;
+          transition: top .1s ease-in .25s,opacity .1s ease-in;
+        }
+      }
+      &.on {
+        span {
+          -webkit-transition-delay: .12s;
+          -o-transition-delay: .12s;
+          transition-delay: .12s;
+          -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          -o-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          -webkit-transform: rotate(225deg);
+          -ms-transform: rotate(225deg);
+          transform: rotate(225deg);
+          &:before {
+            top: 0;
+            -webkit-transition: top 0.1s ease-out, -webkit-transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+            transition: top 0.1s ease-out, -webkit-transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+            -o-transition: top 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+            transition: top 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+            transition: top 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s, -webkit-transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+            -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+          }
+          &:after {
+            top: 0;
+            -webkit-transition: top .1s ease-out,opacity .1s ease-out .12s;
+            -o-transition: top .1s ease-out,opacity .1s ease-out .12s;
+            transition: top .1s ease-out,opacity .1s ease-out .12s;
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+  .header {
+    padding: 20px;
+  }
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+  .wrap-goods__item-img {
+    min-height: auto;
+  }
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+
+  .header-top__info {
+    width: 200px;
+  }
+  .wrap-goods {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .wrap-goods__item-img {
+    min-height: 408px;
+  }
+
+}

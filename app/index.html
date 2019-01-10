@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Front Test</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/scripts.min.js"></script>
+
+</head>
+
+<body>
+<!-- Header start-->
+<header class="header">
+    <div class="header-top">
+        <div class="header-top__search">
+            <input type="text" placeholder="Search">
+            <button></button>
+        </div>
+        <div class="header-top__info">
+            <div class="header-top__sign">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#" data-text="login">
+                                <span>login</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-text="register">
+                                <span>register</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-top__cart">
+                <button class="header-top__cart-favorites"></button>
+                <button class="header-top__cart-cart"><span class="cart-count"></span></button>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="header-bottom__logo">
+            <a href="#">
+                <img src="./img/header/logo.png" alt="">
+            </a>
+        </div>
+        <div class="header-bottom__nav">
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#" data-text="catalog">
+                            <span>catalog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="special-link" data-text="new year">
+                            <span>new year</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-text="sale">
+                            <span>sale</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-text="about">
+                            <span>about</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-text="blog">
+                            <span>blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-text="contact">
+                            <span>contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="language">
+                <ul>
+                    <li class="language-link checked">
+                        <a href="#" data-text="en">
+                            <span>en</span>
+                        </a>
+                    </li>
+                    <li class="language-link">
+                        <a href="#" data-text="ua">
+                            <span>ua</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="cart">
+        <div class="cart-head">
+            <div class="cart-head__info">
+                <p>моя корзина</p>
+                <span></span>
+            </div>
+            <div class="cart-head__close">
+                <button></button>
+            </div>
+        </div>
+        <div class="cart-content">
+
+        </div>
+        <div class="cart-footer">
+            <div class="cart-footer__total">
+                <p class="total-title">total</p>
+                <p class="total-price">0</p>
+            </div>
+            <div class="cart-footer__button">
+                <buttom><span>proceed checkout</span></buttom>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header end -->
+
+<!-- Slider start -->
+<section class="wrap-slider">
+    <div class="wrap-slider__item item1"></div>
+    <div class="wrap-slider__item item2"></div>
+    <div class="wrap-slider__item item3"></div>
+</section>
+<!-- Slider end -->
+
+<!-- Goods content start -->
+<section class="container-fluid wrap-goods">
+    <h2 class="section-title">new arrivals</h2>
+    <!-- Load items with common.js-->
+    <div class="row" id="goods"></div>
+</section>
+<!-- Goods content end -->
+
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
